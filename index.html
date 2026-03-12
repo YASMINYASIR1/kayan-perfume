@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>KAYAN Perfume</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="logo">
+      <img src="images/logo.png" class="logo-img">
+      <span>KAYAN</span>
+    </div>
+
+    <ul class="nav-links">
+      <li><a href="#" data-key="home">الرئيسية</a></li>
+      <li><a href="#products" data-key="perfumes">العطور</a></li>
+      <li><a href="#reviews" data-key="reviews">آراء العملاء</a></li>
+    </ul>
+
+    <div class="lang">
+      <span onclick="setLang('en')">EN</span> |
+      <span onclick="setLang('ar')">AR</span> |
+      <span onclick="setLang('tr')">TR</span>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header class="hero">
+    <img src="images/hero.jpg" class="hero-image">
+  </header>
+
+  <!-- ABOUT -->
+  <section class="about">
+    <div class="about-container">
+      <div class="about-image">
+        <img src="images/hero4.jpg">
+      </div>
+
+      <div class="about-text">
+        <h2>كيان للعطور</h2>
+
+        <p>
+          وُلد كيان من فكرة بسيطة لكنها عميقة…
+          أن العطر ليس مجرد رائحة تُشم، بل حضور يُشعر به.
+        </p>
+
+        <p>
+          في عالمٍ تمتلئ فيه الروائح المتشابهة،
+          جاء كيان ليبحث عن الاختلاف.
+          اختلاف في الإحساس، في التفاصيل،
+          وفي الأثر الذي يتركه العطر في الذاكرة.
+        </p>
+
+        <p>
+          نؤمن أن لكل إنسان كياناً خاصاً به،
+          شخصية لا تشبه غيرها،
+          ولهذا صُممت عطورنا بعناية لتكون أكثر من مجرد عطر…
+          بل امتداداً لهويتك، وتعبيراً صامتاً عن حضورك.
+        </p>
+
+        <p>
+          كل عطر في كيان هو رحلة من النوتات المختارة بدقة،
+          حيث يلتقي الشغف بالفن،
+          وتتحول الرائحة إلى تجربة لا تُنسى.
+        </p>
+
+        <p class="about-quote">
+          كيان… حيث يبدأ الحضور بعطر.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRODUCTS -->
+  <section class="products" id="products">
+    <h2 data-key="productsTitle">العطور</h2>
+
+    <div class="product-grid">
+
+      <div class="product-card">
+        <img src="images/perfume2.jpg">
+        <h3>قاف</h3>
+      
+
+        <div class="perfume-specs">
+          <span>Eau de Parfum</span>
+          <span>50 ML</span>
+        </div>
+        <p class="tagline">قاف… حضور هادئ يترك أثراً واضحاً.</p>
+        <a href="qaf.html" class="perfume-btn">اكتشف العطر</a>
+        <div class="price">2800 TL</div>
+      </div>
+
+      <div class="product-card">
+        <img src="images/perfume1.jpg">
+        <h3>راق</h3>
+
+        <div class="perfume-specs">
+          <span>Eau de Parfum</span>
+          <span>50 ML</span>
+        </div>
+        <p class="tagline">راق… أناقة بسيطة لا تزول.</p>
+        <a href="raq.html" class="perfume-btn">اكتشف العطر</a>
+        <div class="price">1500 TL</div>
+      </div>
+
+      <div class="product-card">
+        <img src="images/dur.jpg">
+        <h3>در</h3>
+       
+
+        <div class="perfume-specs">
+          <span>Eau de Parfum</span>
+          <span>50 ML</span>
+        </div>
+
+        <p class="tagline">در… قوة الحضور في أبهى صورها.</p>
+        <a href="dur.html" class="perfume-btn">اكتشف العطر</a>
+        <div class="price">900 TL</div>
+      </div>
+
+      <div class="product-card">
+        <img src="images/AN.jpg">
+        <h3>أن</h3>
+        
+
+        <div class="perfume-specs">
+          <span>Eau de Parfum</span>
+          <span>50 ML</span>
+        </div>
+        <p class="tagline">آن… لحظة حضورك الخاصة.</p>
+        <a href="an.html" class="perfume-btn">اكتشف العطر</a>
+        <div class="price">1150 TL</div>
+      </div>
+
+      <div class="product-card">
+        <img src="images/faz.jpg">
+        <h3>فزه</h3>
+        
+
+        <div class="perfume-specs">
+          <span>Eau de Parfum</span>
+          <span>50 ML</span>
+        </div>
+        <p class="tagline">فزه… طاقة توقظ الحواس</p>
+        <a href="fazh.html" class="perfume-btn">اكتشف العطر</a>
+        <div class="price">1300 TL</div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- REVIEWS -->
+  <section class="reviews" id="reviews">
+    <p style="opacity:0.7;">شاركنا رأيك عن عطر كيان</p>
+    <h2 data-key="reviewsTitle">آراء العملاء</h2>
+
+    <div id="cusdis_thread"
+      data-host="https://cusdis.com"
+      data-app-id="c2458de2-b516-40a4-8d03-b02d24ebe432"
+      data-page-id="kayan"
+      data-page-url="kayan-perfume"
+      data-page-title="KAYAN Perfume"
+      data-theme="dark">
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© KAYAN Perfume</p>
+  </footer>
+
+  <script async defer src="https://cusdis.com/js/cusdis.es.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

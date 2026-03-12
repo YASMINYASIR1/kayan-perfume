@@ -1,0 +1,896 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&family=Inter:wght@300;400&display=swap');
+html{
+direction:rtl;
+}
+
+
+
+body{
+margin:0;
+font-family:'Inter',sans-serif;
+background:#120022;
+color:white;
+/* margin:0;
+font-family:'Inter',sans-serif;
+background:#120022;
+text-align:center;
+position:relative;
+z-index:1;
+background: linear-gradient(180deg,#0a0014,#120022);
+color:white; */
+}
+
+
+
+
+/* SECTION */
+
+section{
+padding:120px 0;
+}
+
+/* HERO */
+
+.hero{
+  width:100%;
+  height:90vh;
+  overflow:hidden;
+  position:relative;
+}
+
+.hero-image{
+width:100%;
+height:100%;
+object-fit:cover;
+display:block;
+position:relative;
+z-index:0;
+}
+
+
+.hero::before{
+content:"";
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,0.35);
+z-index:1;
+pointer-events:none;
+}
+
+.hero *{
+position:relative;
+z-index:2;
+}
+
+.hero h1{
+font-size:70px;
+letter-spacing:8px;
+text-shadow:0 0 30px rgba(255,255,255,0.3);
+}
+
+
+
+
+.hero-text{
+
+position:absolute;
+
+top:50%;
+left:50%;
+
+transform:translate(-50%,-50%);
+
+text-align:center;
+
+color:white;
+
+z-index:5;
+
+background:rgba(0,0,0,0.3);
+
+padding:30px 40px;
+
+border-radius:10px;
+
+}
+
+
+
+
+.about-image img{
+filter: brightness(1);
+opacity:1;
+}
+
+/* BUTTON */
+
+.order-btn{
+
+display:block;
+
+width:100%;
+
+margin-top:30px;
+
+padding:16px 0;
+
+background:#6b1e2b;
+
+color:white;
+
+text-decoration:none;
+
+text-align:center;
+
+font-size:14px;
+
+letter-spacing:2px;
+
+border:none;
+
+border-radius:4px;
+
+transition:0.3s;
+
+}
+
+.order-btn:hover{
+
+background:#8b2d3c;
+
+}
+
+
+/* NAVBAR */
+
+.navbar{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:10px 40px;
+background:#120818;
+}
+
+.logo{
+display:flex;
+align-items:center;
+gap:10px;
+font-size:20px;
+letter-spacing:5px;
+font-weight:bold;
+}
+
+.logo-img{
+width:55px;
+height:55px;
+object-fit:contain;
+animation: logoGlow 3s ease-in-out infinite;
+}
+
+@keyframes logoGlow{
+0%{filter: drop-shadow(0 0 5px rgba(255,255,255,0.3));}
+50%{filter: drop-shadow(0 0 20px rgba(255,255,255,0.9));}
+100%{filter: drop-shadow(0 0 5px rgba(255,255,255,0.3));}
+}
+
+.logo-img:hover{
+transform:scale(1.1);
+filter: drop-shadow(0 0 15px rgba(255,255,255,0.9));
+}
+
+.nav-links{
+display:flex;
+gap:40px;
+list-style:none;
+margin:0;
+padding:0;
+flex:1;
+justify-content:center;
+}
+
+.nav-links a{
+text-decoration:none;
+color:white;
+transition:0.3s;
+}
+
+.nav-links a:hover{
+color:#8b2d3c;
+}
+
+.lang{
+color:white;
+font-size:14px;
+cursor:pointer;
+}
+
+/* PRODUCTS */
+
+.products{
+padding:80px 40px;
+background:#120022;
+}
+
+.products h2{
+font-size:40px;
+margin-bottom:50px;
+}
+
+.product-grid{
+display:grid;
+grid-template-columns: repeat(6, 1fr);
+gap:40px;
+max-width:1200px;
+margin:auto;
+align-items:start;
+}
+
+.product-card:nth-child(1){
+grid-column: 1 / span 2;
+}
+
+.product-card:nth-child(2){
+grid-column: 3 / span 2;
+}
+
+.product-card:nth-child(3){
+grid-column: 5 / span 2;
+}
+
+.product-card:nth-child(4){
+grid-column: 2 / span 2;
+}
+
+.product-card:nth-child(5){
+grid-column: 4 / span 2;
+}
+
+
+
+/* FOR MOBILE PHONES */
+
+
+@media (max-width: 992px){
+.product-grid{
+grid-template-columns: repeat(2, 1fr);
+}
+
+.product-card:nth-child(1),
+.product-card:nth-child(2),
+.product-card:nth-child(3),
+.product-card:nth-child(4),
+.product-card:nth-child(5){
+grid-column: auto;
+}
+}
+
+@media (max-width: 600px){
+.product-grid{
+grid-template-columns: 1fr;
+}
+}
+
+
+
+
+.product-card{
+background: linear-gradient(
+145deg,
+rgba(130,130,130,0.20),
+rgba(60,60,60,0.34)
+);
+backdrop-filter: blur(25px);
+border:1px solid rgba(107,30,43,0.28);
+padding:30px;
+border-radius:28px;
+text-align:center;
+transition:0.4s;
+display:flex;
+flex-direction:column;
+align-items:center;
+justify-content:space-between;
+gap:18px;
+min-height:620px;
+box-shadow: 
+0 25px 60px rgba(0,0,0,0.45),
+inset 0 1px 0 rgba(255,255,255,0.18);
+}
+
+.product-card img{
+width:100%;
+height:260px;
+object-fit:cover;
+border-radius:15px;
+margin-bottom:10px;
+transition:0.4s;
+}
+
+.product-card:hover{
+transform:translateY(-10px) scale(1.02);
+box-shadow:
+0 20px 40px rgba(0,0,0,0.6),
+0 0 30px rgba(107,30,43,0.20);
+}
+
+.product-card:hover img{
+transform:scale(1.05);
+}
+
+/* NOTES */
+
+.notes{
+text-align:right;
+font-size:14px;
+line-height:1.8;
+opacity:0.9;
+margin-top:10px;
+width:100%;
+}
+
+.description{
+text-align:right;
+font-size:14px;
+line-height:1.8;
+opacity:0.85;
+margin-top:10px;
+width:100%;
+}
+
+/* PERFUME PAGE */
+
+.perfume-text{
+
+max-width:520px;
+
+text-align:right;
+
+background:#3a3a3a;
+
+padding:50px;
+
+border-radius:12px;
+
+border:1px solid rgba(255,255,255,0.05);
+
+}
+
+.perfume-text h1{
+font-family:'Cormorant Garamond',serif;
+font-size:42px;
+letter-spacing:2px;
+}
+
+
+
+.perfume-page{
+display:flex;
+align-items:center;
+justify-content:center;
+gap:80px;
+padding:100px 10%;
+flex-wrap:wrap;
+}
+
+.perfume-image{
+width:320px;
+border-radius:20px;
+}
+
+.perfume-info{
+max-width:500px;
+text-align:right;
+}
+
+.perfume-details{
+
+background: rgba(40,40,40,0.35);
+
+backdrop-filter: blur(10px);
+
+padding:40px;
+
+border-radius:20px;
+
+border:1px solid rgba(255,255,255,0.08);
+
+}
+
+/* NOTES SECTION */
+
+.notes-section{
+padding:80px 40px;
+background:#120818;
+}
+
+.notes-section h2{
+font-size:40px;
+margin-bottom:50px;
+}
+
+.notes-container{
+display:flex;
+gap:40px;
+justify-content:center;
+flex-wrap:wrap;
+}
+
+.note-card{
+background:#1b0c24;
+padding:30px;
+border-radius:20px;
+width:420px;
+text-align:right;
+line-height:1.8;
+box-shadow:0 20px 40px rgba(0,0,0,0.6);
+}
+
+.note-card h3{
+font-size:28px;
+margin-bottom:20px;
+}
+
+/* REVIEWS */
+
+.reviews{
+padding:80px 40px;
+background:#120022;
+text-align:center;
+}
+
+.reviews h2{
+font-size:38px;
+margin-bottom:40px;
+}
+
+
+
+
+/* صندوق التعليقات */
+#cusdis_thread{
+max-width:750px;
+margin:auto;
+background:rgba(25,5,40,0.65);
+padding:35px;
+border-radius:22px;
+border:1px solid rgba(255,255,255,0.08);
+box-shadow:0 15px 40px rgba(0,0,0,0.45);
+backdrop-filter:blur(12px);
+}
+
+/* الاسم */
+.cusdis-comment-author{
+font-weight:600;
+color:#ffffff;
+font-size:16px;
+}
+
+/* نص التعليق */
+.cusdis-comment-content{
+color:#e8dff5;
+line-height:1.7;
+}
+
+/* حقل الكتابة */
+#cusdis_thread input,
+#cusdis_thread textarea{
+background:rgba(0,0,0,0.35) !important;
+color:white !important;
+border:1px solid rgba(255,255,255,0.15) !important;
+border-radius:10px !important;
+padding:12px !important;
+}
+
+/* زر التعليق */
+#cusdis_thread button{
+background:#6b1e2b !important;
+color:white !important;
+border:none !important;
+border-radius:12px !important;
+padding:10px 20px !important;
+transition:0.3s;
+}
+
+#cusdis_thread button:hover{
+background:#8b2d3c !important;
+}
+
+
+/* REVIEW CARDS */
+
+.cusdis-comment{
+background: rgba(25,5,40,0.65) !important;
+border:1px solid rgba(255,255,255,0.08) !important;
+border-radius:18px !important;
+padding:18px !important;
+margin-bottom:16px !important;
+box-shadow:0 10px 25px rgba(0,0,0,0.35) !important;
+transition:0.3s;
+}
+
+.cusdis-comment:hover{
+transform:translateY(-3px);
+box-shadow:0 18px 35px rgba(0,0,0,0.45);
+}
+
+.cusdis-comment-author{
+font-weight:600 !important;
+color:#ffffff !important;
+font-size:16px !important;
+margin-bottom:6px;
+}
+
+.cusdis-comment-content{
+color:#e9e2f2 !important;
+line-height:1.6;
+font-size:15px;
+}
+
+#cusdis_thread{
+max-width:750px;
+margin:auto;
+}
+
+.cusdis-comment-content{
+color:#e9e2f2 !important;
+line-height:1.6;
+font-size:15px;
+}
+
+/* النجوم */
+.cusdis-comment-content::first-line{
+color:#ffd700;
+font-size:18px;
+letter-spacing:2px;
+}
+
+
+.cusdis-comment{
+background:rgba(25,5,40,0.65) !important;
+border-radius:18px !important;
+padding:18px !important;
+margin-bottom:16px !important;
+box-shadow:0 10px 25px rgba(0,0,0,0.35) !important;
+}
+
+.cusdis-comment:hover{
+transform:translateY(-3px);
+}
+/* FOOTER */
+
+footer{
+padding:20px;
+background:#120022;
+}
+
+
+
+
+.perfume-btn{
+
+display:inline-block;
+margin-top:15px;
+padding:10px 25px;
+
+background:#6b1e2b;
+color:white;
+
+text-decoration:none;
+border-radius:25px;
+
+font-size:14px;
+transition:0.3s;
+
+}
+
+.perfume-btn:hover{
+
+background:#8b2d3c;
+transform:scale(1.05);
+
+}
+
+
+
+:root{
+
+--main-purple:#4b1d63;
+--dark-purple:#2a0c3b;
+
+--burgundy:#6b1e2b;
+--soft-burgundy:#8b2d3c;
+
+--dark-gray:#3a3a3a;
+--light-gray:#9a9a9a;
+
+}
+
+
+body::before{
+
+content:"";
+position:fixed;
+
+top:0;
+left:0;
+width:100%;
+height:100%;
+
+background-image:url("images/pattern.png");
+background-size:350px;
+background-repeat:repeat;
+
+opacity:0.04;
+
+pointer-events:none;
+z-index:0;
+
+}
+
+
+/* PERFUMES SEPRATED PAGE : */
+
+.perfume-page{
+padding:80px 10%;
+}
+
+.perfume-container{
+display:flex;
+align-items:center;
+justify-content:space-between;
+gap:60px;
+
+background: linear-gradient(
+145deg,
+rgba(95,95,95,0.20),
+rgba(35,35,35,0.36)
+);
+backdrop-filter: blur(20px);
+border: 1px solid rgba(107,30,43,0.24);
+border-radius: 28px;
+padding: 40px;
+box-shadow: 0 30px 80px rgba(0,0,0,0.55);
+}
+
+.perfume-text{
+max-width:500px;
+}
+
+.perfume-text h1{
+
+font-size:42px;
+
+margin-bottom:10px;
+
+letter-spacing:2px;
+}
+
+.perfume-text h3{
+margin-top:20px;
+color:#e6e6e6;
+}
+
+.perfume-text ul{
+line-height:2;
+color:#cfcfcf;
+}
+
+.perfume-text p{
+line-height:1.9;
+
+color:#d7d7d7;
+}
+
+.tagline{
+margin-top:15px;
+font-weight:bold;
+}
+
+.perfume-image-box img{
+width:350px;
+border-radius:20px;
+box-shadow:0 20px 40px rgba(0,0,0,0.6);
+}
+
+
+
+
+
+.perfume-text{
+
+background: rgba(58,58,58,0.32);
+
+padding:40px;
+
+border-radius:20px;
+
+border:1px solid rgba(107,30,43,0.22);
+
+backdrop-filter: blur(10px);
+
+}
+
+
+
+
+
+
+
+
+/* ABOUT SECTION  */
+
+
+.about{
+
+padding:120px 10%;
+background:#120022;
+
+}
+
+.about-container{
+
+display:flex;
+align-items:center;
+justify-content:space-between;
+
+gap:80px;
+
+flex-wrap:wrap;
+
+}
+
+.about-image img{
+
+width:350px;
+
+border-radius:20px;
+
+box-shadow:0 25px 50px rgba(0,0,0,0.7);
+
+}
+
+.about-text{
+
+max-width:550px;
+
+text-align:right;
+
+line-height:2;
+
+background:rgba(58,58,58,0.24);
+
+padding:40px;
+
+border-radius:20px;
+
+border:1px solid rgba(107,30,43,0.22);
+
+backdrop-filter:blur(10px);
+
+}
+
+.about-text h2{
+
+font-size:40px;
+
+margin-bottom:20px;
+
+letter-spacing:2px;
+
+}
+
+.about-text p{
+
+color:#e5e5e5;
+
+font-size:16px;
+
+}
+
+.about-quote{
+
+margin-top:20px;
+
+font-weight:bold;
+
+font-size:18px;
+
+color:#8b2d3c;
+
+}
+
+.about-image img{
+transition:0.5s;
+}
+
+.about-image img:hover{
+transform:scale(1.05);
+}
+
+
+
+/* edu perfumes */
+
+
+.perfume-specs{
+
+display:flex;
+
+gap:15px;
+
+margin:10px 0 25px 0;
+
+}
+
+.perfume-specs span{
+
+background:rgba(60,60,60,0.35);
+
+padding:6px 14px;
+
+border-radius:20px;
+
+font-size:13px;
+
+border:1px solid rgba(107,30,43,0.18);
+
+}
+
+.price{
+
+font-size:24px;
+
+margin:15px 0 30px 0;
+
+font-weight:bold;
+
+color:#e6e6e6;
+
+letter-spacing:2px;
+
+}
+
+
+
+
+/* inside the pages for the two perfumes */
+
+.perfume-meta{
+
+display:flex;
+gap:10px;
+margin:10px 0;
+
+}
+
+.perfume-meta span{
+
+background:rgba(70,70,70,0.35);
+
+padding:6px 14px;
+
+border-radius:20px;
+
+font-size:12px;
+
+border:1px solid rgba(107,30,43,0.18);
+
+}
+
+.price{
+font-size:15px;
+font-weight:bold;
+margin-top:20px;
+letter-spacing:1px;
+
+background:rgba(107,30,43,0.25);
+border:1px solid rgba(107,30,43,0.35);
+
+display:inline-block;
+padding:8px 20px;
+border-radius:25px;
+
+color:white;
+}

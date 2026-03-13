@@ -563,8 +563,13 @@ transform:translateY(-3px);
 footer{
 padding:20px;
 background:#120022;
+text-align:center;
 }
 
+footer p{
+margin:0;
+text-align:center;
+}
 
 
 
@@ -893,4 +898,5 @@ padding:8px 20px;
 border-radius:25px;
 
 color:white;
+
 }

@@ -4,7 +4,8 @@
 <head>
 
 <meta charset="UTF-8">
-<title>راق</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>فزه</title>
 
 <link rel="stylesheet" href="style.css">
 
@@ -18,7 +19,7 @@
 
 <div class="perfume-text">
 
-<h1>فزه</h1>
+<h1 data-key="fzhName">فزه</h1>
 
 <!-- <div class="perfume-meta">
 <span>Eau de Parfum</span>
@@ -27,17 +28,17 @@
 </div> -->
 
 
-<h3>النوتات</h3>
+<h3 data-key="notes">النوتات</h3>
 
 <ul>
-<li>المقدمة: افتتاحية خضراء حارة قليلاً تعطي طابعاً فريداً</li>
-<li>القلب: لمسات عطرية مبتكرة تمزج بين الطبيعة والحداثه</li>
-<li>القاعدة:قاعدة خشبية مركزة تمنح العطر ثباتاً استثنائياً</li>
+<li data-key="fzhTop">المقدمة: افتتاحية خضراء حارة قليلاً تعطي طابعاً فريداً</li>
+<li data-key="fzhHeart">القلب: لمسات عطرية مبتكرة تمزج بين الطبيعة والحداثه</li>
+<li data-key="fzhBase">القاعدة:قاعدة خشبية مركزة تمنح العطر ثباتاً استثنائياً</li>
 </ul>
 
-<h3>الوصف</h3>
+<h3 data-key="description">الوصف</h3>
 
-<p>
+<p data-key="fzhDesc">
 عطر جريء يبدأ بانتعاش أخضر حار قليلاً،
 يتحول إلى قلب أنيق بلمسة عطرية معاصرة،
 ويستقر على قاعدة خشبية عميقة تمنحه ثباتاً مميزاً
@@ -46,9 +47,8 @@
 
 
 <p class="price">1300 TL</p>
-<a class="order-btn"
-href="https://wa.me/966558625981?text=مرحبا اريد طلب عطر قاف">
-اطلب عبر واتساب
+<a class="order-btn" href="#" data-key="orderBtn">
+  اطلب عبر واتساب
 </a>
 
 </div>
@@ -62,6 +62,6 @@ href="https://wa.me/966558625981?text=مرحبا اريد طلب عطر قاف">
 </div>
 
 </section>
-
+<script src="script.js"></script>
 </body>
 </html>

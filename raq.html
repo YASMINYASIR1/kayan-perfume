@@ -4,6 +4,7 @@
 <head>
 
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>راق</title>
 
 <link rel="stylesheet" href="style.css">
@@ -18,7 +19,7 @@
 
 <div class="perfume-text">
 
-<h1>راق</h1>
+<h1 data-key="raqName">راق</h1>
 
 <!-- <div class="perfume-meta">
 <span>Eau de Parfum</span>
@@ -27,17 +28,17 @@
 </div> -->
 
 
-<h3>النوتات</h3>
+<h3 data-key="notes">النوتات</h3>
 
 <ul>
-<li>المقدمة: انتعاش حمضي صافٍ ونقي</li>
-<li>القلب: عبير عطري يجمع بين الزهور ونضارة الأعشاب</li>
-<li>القاعدة: لمسات خشبية خفيفة تمنح شعوراً بالنظافة</li>
+<li data-key="raqTop">المقدمة: انتعاش حمضي صافٍ ونقي</li>
+<li data-key="raqHeart">القلب: عبير عطري يجمع بين الزهور ونضارة الأعشاب</li>
+<li data-key="raqBase">القاعدة: لمسات خشبية خفيفة تمنح شعوراً بالنظافة</li>
 </ul>
 
-<h3>الوصف</h3>
+<h3 data-key="description">الوصف</h3>
 
-<p>
+<p data-key="raqDesc">
 عطر نقي يفتتح بانتعاش الحمضيات الصافية،
 ثم يتوازن مع قلب عطري أنيق من الزهور والأعشاب،
 لينتهي بقاعدة خفيفة تمنح إحساساً دائماً بالنظافة والرقي.
@@ -47,9 +48,8 @@
 
 
 <p class="price">1500 TL</p>
-<a class="order-btn"
-href="https://wa.me/966558625981?text=مرحبا اريد طلب عطر قاف">
-اطلب عبر واتساب
+<a class="order-btn" href="#" data-key="orderBtn">
+  اطلب عبر واتساب
 </a>
 
 </div>
@@ -63,6 +63,7 @@ href="https://wa.me/966558625981?text=مرحبا اريد طلب عطر قاف">
 </div>
 
 </section>
+<script src="script.js"></script>
 
 </body>
 </html>

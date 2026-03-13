@@ -4,6 +4,7 @@
 <head>
 
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>قاف</title>
 
 <link rel="stylesheet" href="style.css">
@@ -19,18 +20,18 @@
 <div class="perfume-text">
 
 
-<h1>قاف</h1>
-<h3>النوتات</h3>
+<h1 data-key="qafName">قاف</h1>
+<h3 data-key="notes">النوتات</h3>
 
 <ul>
-<li>المقدمة: نفحات حمضية مشرقة</li>
-<li>القلب: لمسات عطرية ناعمة متوازنة</li>
-<li>القاعدة: أخشاب أنيقة بلمسة دافئة</li>
+<li data-key="qafTop">المقدمة: نفحات حمضية مشرقة</li>
+<li data-key="qafHeart">القلب: لمسات عطرية ناعمة متوازنة</li>
+<li data-key="qafBase">القاعدة: أخشاب أنيقة بلمسة دافئة</li>
 </ul>
 
-<h3>الوصف</h3>
+<h3 data-key="description">الوصف</h3>
 
-<p>
+<p data-key="qafDesc">
 عطر يبدأ بإشراقة منعشة تلامس الحواس برقة،
 ثم يتكشف تدريجياً عن قلب عطري متوازن يحمل لمسة من الحيوية والنعومة،
 ليستقر أخيراً على قاعدة خشبية هادئة تمنحه عمقاً وأناقة تدوم.
@@ -40,9 +41,8 @@
 
 
 <p class="price">2800 TL</p>
-<a class="order-btn"
-href="https://wa.me/966558625981?text=مرحبا%20اريد%20طلب%20عطر%20قاف">
-اطلب عبر واتساب
+<a class="order-btn" href="#" data-key="orderBtn">
+  اطلب عبر واتساب
 </a>
 
 </div>
@@ -56,6 +56,6 @@ href="https://wa.me/966558625981?text=مرحبا%20اريد%20طلب%20عطر%20
 </div>
 
 </section>
-
+<script src="script.js"></script>
 </body>
 </html>

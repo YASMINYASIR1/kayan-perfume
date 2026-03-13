@@ -901,5 +901,146 @@ color:white;
 }
 /* يجعل الصفحة مناسبة للجوال */
 
+@media (max-width: 768px){
+
+  .navbar{
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    padding: 15px 10px;
+  }
+
+  .logo{
+    order: 1;
+    justify-content: center;
+    font-size: 18px;
+    letter-spacing: 3px;
+  }
+
+  .logo-img{
+    width: 42px;
+    height: 42px;
+  }
+
+  .nav-links{
+    order: 2;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 18px;
+  }
+
+  .nav-links a{
+    font-size: 16px;
+  }
+
+  .lang{
+    order: 3;
+    font-size: 15px;
+  }
+
+  .hero{
+    height: auto;
+  }
+
+  .hero-image{
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .about{
+    padding: 70px 20px;
+  }
+
+  .about-container{
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .about-image img{
+    width: 100%;
+    max-width: 320px;
+  }
+
+  .about-text{
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    padding: 25px 20px;
+  }
+
+  .about-text h2{
+    font-size: 32px;
+  }
+
+  .products{
+    padding: 70px 20px;
+  }
+
+  .products h2{
+    font-size: 32px;
+  }
+
+  .product-grid{
+    grid-template-columns: 1fr !important;
+    gap: 25px;
+  }
+
+  .product-card:nth-child(1),
+  .product-card:nth-child(2),
+  .product-card:nth-child(3),
+  .product-card:nth-child(4),
+  .product-card:nth-child(5){
+    grid-column: auto !important;
+  }
+
+  .product-card{
+    min-height: auto;
+    padding: 22px;
+  }
+
+  .product-card img{
+    height: auto;
+    max-height: 320px;
+  }
+
+  .perfume-page{
+    padding: 40px 20px;
+  }
+
+  .perfume-container{
+    flex-direction: column;
+    gap: 25px;
+    padding: 22px;
+  }
+
+  .perfume-image-box img{
+    width: 100%;
+    max-width: 320px;
+  }
+
+  .perfume-text{
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    padding: 25px 20px;
+  }
+
+  .reviews{
+    padding: 70px 20px;
+  }
+
+  #cusdis_thread{
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    padding: 18px;
+  }
+
+  footer{
+    text-align: center;
+    padding: 20px 10px;
+  }
+}
 
 

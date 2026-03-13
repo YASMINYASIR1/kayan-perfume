@@ -181,26 +181,7 @@ function setLang(lang) {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-
     const savedLang = localStorage.getItem("siteLang") || "ar";
     setLang(savedLang);
-
-    const orderBtn = document.querySelector(".order-btn");
-    const perfumeTitle = document.querySelector(".perfume-text h1");
-
-    if (orderBtn && perfumeTitle) {
-        orderBtn.addEventListener("click", function (e) {
-
-            e.preventDefault();
-
-            const perfumeName = perfumeTitle.textContent.trim();
-            const message = `اهلا ابغى اطلب عطر ${perfumeName}`;
-
-            const url = `https://wtsi.me/905079159366?text=${encodeURIComponent(message)}`;
-
-            window.open(url, "_blank");
-
-        });
-    }
-
 });
+

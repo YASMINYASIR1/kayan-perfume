@@ -38,13 +38,11 @@ padding:120px 0;
   position:relative;
 }
 
-.hero-image{
+.hero img{
 width:100%;
-height:100%;
-object-fit:cover;
+height:auto;
 display:block;
-position:relative;
-z-index:0;
+margin:auto;
 }
 
 
@@ -918,3 +916,4 @@ img{
 max-width:100%;
 height:auto;
 }
+
